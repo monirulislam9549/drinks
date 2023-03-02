@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- search section  -->
+    <section class="flex justify-center mt-10">
+        <input id="search-field" type="text" placeholder="Type here"
+            class="input input-bordered input-primary w-full max-w-xs" />
+        <button onclick="btnSearch()" class="btn btn-active btn-primary">Button</button>
+
+    </section>
+
+    <section>
+
+
+
+        <!-- show modal  -->
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="drink-detail">
+                </div>
+
+                <div class="modal-action">
+                    <label for="my-modal-6" class="btn bg-blue-700 border-none">Close</label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- item section  -->
+    <section>
+
+        <div id="drink-container" class="grid grid-cols-1 md:grid-cols-2 mt-10">
+        </div>
+
+        <div id="error-message" class="hidden">
+            <h1 class="text-red-600 text-center">No Drink Found</h1>
+        </div>
+        <div id="show-all" class="flex justify-center hidden">
+            <button onclick="btnShowAll()" class="btn btn-active btn-primary">Show All</button>
+        </div>
+    </section>
+
+    <section id="loader" class="flex justify-center hidden">
+        <button class="btn loading">loading</button>
+
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
