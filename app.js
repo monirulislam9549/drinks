@@ -105,7 +105,7 @@ const displayDrinkDetail = (drink) => {
         }" alt="">
     <p> Description: <span class="font-bold">${drink.drinks[0].strInstructions
         }</span></p>
-    <p>Youtube Channel: <a href=""></a>${drink.drinks[0] ? drink.drinks[0].strVideo : 'No link Found'}</p>
+    <p>Youtube Channel: <a href=""></a>${drink.drinks[0].strVideo ? drink.drinks[0].strVideo : 'No link Found'}</p>
     `
 }
 
